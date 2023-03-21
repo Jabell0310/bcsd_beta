@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform&Transition</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: lightgray;
+      }
+      .outline,
+      .box {
+        width: 60px;
+        height: 60px;
+      }
+      .outline {
+        border: 3px solid yellow;
+        margin: 0 auto; /* 상하로 auto를 적용하면 적용이 안되는 것을 볼 수 있는데 html에서 margin top과 bottom은 0px로 인식하기 때문이다. */
+        margin-top: 20px;
+      }
+      .box {
+        background-color: blue;
+      }
+      .box1 {
+        transform: translate(
+          10px,
+          10px
+        ); /* x축으로 +면 오른쪽 -면 왼쪽으로 이동하는 것을 볼 수 있다. 단 y축은 +면 아래로 -면 위로 이동한다. x y둘다 입력할 수 있다*/
+      }
+      .box2 {
+        transform: scale(
+          2,
+          0.5
+        ); /*x축으로 box가 2배로 되는 것을 볼 수 있다. 특정 숫자값을 입력하면 특정 숫자배만큼 박스 x축 y축 길이가 바뀐다.*/
+      }
+      .box3 {
+        transform: rotate(45deg);
+      }
+      /* rotate태그는 말그대로 어떤 축을 기준으로 box가 회전하는 것으로 x,y,z축 셋다 적용할 수 있다. 그러나 z축은 rotate의 기본값과 같으므로 2축이상을 같이 쓰는 경우가 아니면 굳이 쓰지는 않는다. */
+      .outline-box3 {
+        perspective: 50px;
+      } /*box3 처럼 한 축을 기준으로만 회전하면 잘 식별할 수 없기 때문에 perspective 태그를 넣어서 원근감을 넣어주고 회전을 확인한다.*/
+      .box4 {
+        transform: skew(15deg, 20deg);
+      } /* skew는 x축이나 y축으로 왜곡을 시키는 태그이다.*/
+      .box1:hover {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: rotate(180deg);
+      } /*이렇게만 처리하면 박스에 마우스 커서를 가까이 했을때 부자연스럽게 바뀐다*/
+      .box1 {
+        transition-property: width, height, background-color, transform;
+        transition-duration: 2s; /*2초안에 width와 height값을 위의 .box:hover에 있는 width와 height값으로 변환하라는 의미 근데 transition 2s 1s하면 duration시간 delay시간으로 인식하므로 굳이 잘 안 씀*/
+        transition-delay: 1s; /*마우스 커서를 가까이 했을때 1초간 delay하고 transition-duration을 실행하라는 의미*/
+        transition-timing-function: linear; /*transition-duration의 속도를 일정하게 유지할 것인지(linear), 처음에는 느리다가 빨라질 것인지(ease-in),처음에는 빨랐다가 느려질 것인지(ease-out) 결정*/
+      } /*이런식으로 transiton을 처리해주면 마우스커서를 가까이 했을때 모션이 부드러워진다.*/
+    </style>
+  </head>
+  <body>
+    <div class="outline">
+      <div class="box box1"></div>
+    </div>
+    <div class="outline">
+      <div class="box box2"></div>
+    </div>
+    <div class="outline">
+      <div class="box box3"></div>
+    </div>
+    <div class="outline">
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>

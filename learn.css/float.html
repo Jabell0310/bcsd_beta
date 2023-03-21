@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      .container {
+        width: 600px;
+        border: 1px solid grey;
+      }
+      img {
+        width: 200px;
+      }
+      .float-left {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .float-right {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      p {
+        border: 1px solid blue;
+      }
+      /* float의 속성을 알아보고자 짠 코드로 p에다가 border처리를 해줬기 때문에 이미지파일을 통해서 더더욱 float의 특성이 드러난다.  이때 사진 주위로 글을 더이상 쓰고 싶지 않은 경우 clear처리해주면 된다. */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="float-left" src="../asset/images/sushi1.jpg" alt="" />
+      <p>
+        스시(일본어: 寿司) 또는 초밥(醋-)은 일본의 쌀밥 요리이다. 쌀밥에 날생선
+        등의 해산물이나 달걀 등을 조합한 음식으로, 전통적으로 와사비와 함께
+        먹는다. 손으로 쥐어 만든 스메시(초를 친 밥)에 생선 등을 얹어 만든
+        니기리즈시가 대표적이지만, 그 외에도 여러 가지 형태가 있다. 일본의 국민
+        음식 가운데 하나로 여겨진다.
+      </p>
+      <img class="float-right" src="../asset/images/sushi2.jpg" alt="" />
+      <p>
+        일본어 "스시(寿司)"의 어원은 "시다"는 뜻의 옛 일본어 형용사
+        "스시(酸し)"이다. 현대 일본어에서 "시다"를 뜻하는 말은 "스이(酸い)"이다.
+        "스시"는 히라가나나 다른 한자를 사용해 "すし", "鮨", "鮓" 등으로
+        표기하기도 한다.
+      </p>
+    </div>
+  </body>
+</html>

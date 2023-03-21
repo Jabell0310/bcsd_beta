@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: #f91d1db5; /*fq:r값 1d:g값 1d:b값 b5:투명도값*/
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url("../asset/images/spain.jpg");
+        background-repeat: repeat; /*사진 파일이 기존 배경보다 작을 때 background-repeat은 사진 파일을 배경이 채워질 때까지 반복하는 것으로 가로만 또는 세로만 repeat할 수도 있고 반복하지 않을 수도 있다.*/
+        background-position: center; /*사진이 배경에 어디부분에 위치할 것인지 지정할 수 있는 코드로 이것도 마찬가지로 가로 세로만 설정할 수도 있고 좌상 좌하도 설정할 수 있다*/
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-y: scroll; /*overflow는 데이터가 배경보다 넘쳐났을 때 쓰는 코드로 hidden은 넘쳐난 데이터를 숨기는 코드이고 scroll은 넘쳐난 데이터에 스크롤바가 생성되어 밑으로 확인하는 역할을 한다.*/
+        color: white;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      /* scroll과 fixed는 이미지 파일이 고정되어 있는 반면 local은 글자와 함께 이미지 파일이 같이 내려간다. */
+      /* scroll과 fixed는 viewport에 scroll이 있느냐 없느냐에 따라 차이가 생기는데 scroll은 viewport에서 스크롤바를 움직일때 이미지 파일도 같이 움직이는 반면 fixed는 이미지 파일이 고정되어 있다. */
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url("../asset/images/football.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      /* border-size에서 contain은 이미지 파일이 짤리지 않는 선에서 가장 크게 설정하는 명령어이다. */
+      /* cover는 html요소를 모두 차지하는 이미지 파일을 생성한다. */
+      /* auto는 자동으로 이미지를 맞춰주는 코드이다 */
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red 50%, blue 80%, yellow 100%);
+      }
+      /* linear-gradient는 두개 이상의 색상이 점진적으로 변화하는 코드이다. */
+      /* to 코드를 처리하여 방향을 오른쪽으로 설정하였다. 2가지 키워드를 넣어서 우상 우하 좌상 좌하도 표시할 수 있다 */
+      /* deg 코드는 선형처리의 각도를 어떻게 설정할 것인지 결정하는 것으로 45 deg로 설정하면 45도 기울어진 선형 그라데이션이 나타난다 */
+      /* %를 설정하여 오른쪽으로 선형적 그라데이션의 범위를 조정할 수 있다. */
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          circle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
+      /* radial-gradient는 원점을 기준으로 색상이 원형으로 점진적으로 변화하는 코드이다. */
+      /* linear 그라데이션과 마찬가지로 색상 수 범위도 설정할 수 있다. */
+      /* circle at 코드를 사용하여 원점의 방향을 조정할 수 있다. */
+    </style>
+  </head>
+  <body>
+    <h1>background-color</h1>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      <h4>scroll</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non
+      inventore modi incidunt mollitia omnis, animi, veritatis illum expedita et
+      fuga ex quaerat quisquam vero, autem id voluptatum cumque harum. Debitis
+      sapiente libero dolor unde eos ad ducimus. Eius suscipit provident enim
+      assumenda, quasi, saepe et vitae magnam vero totam incidunt obcaecati
+      cupiditate iste odit fuga laborum accusantium! Ex, impedit? Vel molestiae
+      nulla ratione rem soluta quam eligendi impedit, placeat ad debitis eius
+      modi obcaecati esse itaque officiis illo dicta unde voluptatum mollitia ab
+      commodi deserunt! Vel aliquam cupiditate eligendi. Ipsum vero asperiores
+      praesentium ex, minima voluptatibus officiis voluptatem quos pariatur
+      corrupti fugiat cupiditate aperiam numquam ipsa dolorum, provident
+      sapiente dolores quasi voluptatum sunt recusandae eveniet labore? Itaque,
+      assumenda cupiditate. Doloribus at error perspiciatis delectus, dolores
+      iste impedit voluptate aliquid id non est deleniti sit saepe sint ut fuga,
+      architecto ipsum culpa, recusandae autem asperiores perferendis? Ipsam
+      libero praesentium consectetur. Optio, reprehenderit aliquid nobis quos
+      dolorum molestiae asperiores eum maxime! Voluptatibus cum eligendi vel
+      nisi tempore voluptatum ipsum, commodi iure aliquid, ipsa dolores sint
+      porro reprehenderit nam? Exercitationem, at placeat! At iusto animi atque
+      magnam, ipsum totam velit quaerat corrupti sapiente laudantium iste amet
+      fugiat. Architecto officia ad ducimus, dignissimos consequatur, numquam ut
+      sit obcaecati repellendus modi maxime sequi accusamus. Nulla delectus
+      provident error commodi exercitationem debitis possimus laborum id aut.
+      Maiores veritatis fugiat, harum quasi quam facere quidem ea quibusdam
+      labore ipsum velit. Eum ipsa iure corporis quos? Deleniti?
+    </div>
+    <div class="image attachment-fixed">
+      <h4>fixed</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non
+      inventore modi incidunt mollitia omnis, animi, veritatis illum expedita et
+      fuga ex quaerat quisquam vero, autem id voluptatum cumque harum. Debitis
+      sapiente libero dolor unde eos ad ducimus. Eius suscipit provident enim
+      assumenda, quasi, saepe et vitae magnam vero totam incidunt obcaecati
+      cupiditate iste odit fuga laborum accusantium! Ex, impedit? Vel molestiae
+      nulla ratione rem soluta quam eligendi impedit, placeat ad debitis eius
+      modi obcaecati esse itaque officiis illo dicta unde voluptatum mollitia ab
+      commodi deserunt! Vel aliquam cupiditate eligendi. Ipsum vero asperiores
+      praesentium ex, minima voluptatibus officiis voluptatem quos pariatur
+      corrupti fugiat cupiditate aperiam numquam ipsa dolorum, provident
+      sapiente dolores quasi voluptatum sunt recusandae eveniet labore? Itaque,
+      assumenda cupiditate. Doloribus at error perspiciatis delectus, dolores
+      iste impedit voluptate aliquid id non est deleniti sit saepe sint ut fuga,
+      architecto ipsum culpa, recusandae autem asperiores perferendis? Ipsam
+      libero praesentium consectetur. Optio, reprehenderit aliquid nobis quos
+      dolorum molestiae asperiores eum maxime! Voluptatibus cum eligendi vel
+      nisi tempore voluptatum ipsum, commodi iure aliquid, ipsa dolores sint
+      porro reprehenderit nam? Exercitationem, at placeat! At iusto animi atque
+      magnam, ipsum totam velit quaerat corrupti sapiente laudantium iste amet
+      fugiat. Architecto officia ad ducimus, dignissimos consequatur, numquam ut
+      sit obcaecati repellendus modi maxime sequi accusamus. Nulla delectus
+      provident error commodi exercitationem debitis possimus laborum id aut.
+      Maiores veritatis fugiat, harum quasi quam facere quidem ea quibusdam
+      labore ipsum velit. Eum ipsa iure corporis quos? Deleniti?
+    </div>
+    <div class="image attachment-local">
+      <h4>local</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non
+      inventore modi incidunt mollitia omnis, animi, veritatis illum expedita et
+      fuga ex quaerat quisquam vero, autem id voluptatum cumque harum. Debitis
+      sapiente libero dolor unde eos ad ducimus. Eius suscipit provident enim
+      assumenda, quasi, saepe et vitae magnam vero totam incidunt obcaecati
+      cupiditate iste odit fuga laborum accusantium! Ex, impedit? Vel molestiae
+      nulla ratione rem soluta quam eligendi impedit, placeat ad debitis eius
+      modi obcaecati esse itaque officiis illo dicta unde voluptatum mollitia ab
+      commodi deserunt! Vel aliquam cupiditate eligendi. Ipsum vero asperiores
+      praesentium ex, minima voluptatibus officiis voluptatem quos pariatur
+      corrupti fugiat cupiditate aperiam numquam ipsa dolorum, provident
+      sapiente dolores quasi voluptatum sunt recusandae eveniet labore? Itaque,
+      assumenda cupiditate. Doloribus at error perspiciatis delectus, dolores
+      iste impedit voluptate aliquid id non est deleniti sit saepe sint ut fuga,
+      architecto ipsum culpa, recusandae autem asperiores perferendis? Ipsam
+      libero praesentium consectetur. Optio, reprehenderit aliquid nobis quos
+      dolorum molestiae asperiores eum maxime! Voluptatibus cum eligendi vel
+      nisi tempore voluptatum ipsum, commodi iure aliquid, ipsa dolores sint
+      porro reprehenderit nam? Exercitationem, at placeat! At iusto animi atque
+      magnam, ipsum totam velit quaerat corrupti sapiente laudantium iste amet
+      fugiat. Architecto officia ad ducimus, dignissimos consequatur, numquam ut
+      sit obcaecati repellendus modi maxime sequi accusamus. Nulla delectus
+      provident error commodi exercitationem debitis possimus laborum id aut.
+      Maiores veritatis fugiat, harum quasi quam facere quidem ea quibusdam
+      labore ipsum velit. Eum ipsa iure corporis quos? Deleniti?
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      #webtoon-characer {
+        border-collapse: collapse; /*라인을 겹쳐서 보이게 하는 코드 */
+        width: 100px;
+      }
+      #webtoon-character td #webtoon-character th {
+        border: 1px solid #ddd; /* td와 th 각각 테투리를 넣는 코드 */
+        padding: 8px; /*td와 th 각각 table여백을 남기는 코드 */
+      }
+      #webtoon-character th {
+        padding-top: 12px; /*안쪽 위 여백에 대한 규정 */
+        padding-bottom: 12px; /*안쪽 아래 여백에 대한 규정*/
+        text-align: left;
+        background-color: green;
+        color: white;
+      }
+      #webtoon-character tr:hover {
+        background-color: rgb(104, 100, 100);
+      }
+      /* :hover 마우스가 위에 있을 떄 스타일 규칙이 적용되는 명령어*/
+    </style>
+  </head>
+  <body>
+    <table id="webtoon-character">
+      <tr>
+        <th>등장인물</th>
+        <th>캐릭터 세대</th>
+        <th>직책</th>
+      </tr>
+      <tr>
+        <td>김갑룡</td>
+        <td>0세대 전설</td>
+        <td>김갑룡주먹패 두목</td>
+      </tr>
+      <tr>
+        <td>최동수</td>
+        <td>0세대</td>
+        <td>김갑룡주먹패 부두목</td>
+      </tr>
+      <tr>
+        <td>박진영</td>
+        <td>0세대</td>
+        <td>김갑룡주먹패 행동대장</td>
+      </tr>
+      <tr>
+        <td>이도규</td>
+        <td>0세대</td>
+        <td>김갑룡주먹패 지왕</td>
+      </tr>
+      <tr>
+        <td>이지훈</td>
+        <td>1세대 전설</td>
+        <td>1인써클</td>
+      </tr>
+      <tr>
+        <td>곽지창</td>
+        <td>1세대</td>
+        <td>(전)서울의 왕/(현)충청의 왕</td>
+      </tr>
+      <tr>
+        <td>마태수</td>
+        <td>1세대</td>
+        <td>(현)안산의 왕</td>
+      </tr>
+      <tr>
+        <td>지공섭</td>
+        <td>1세대</td>
+        <td>(현)대구의 왕</td>
+      </tr>
+      <tr>
+        <td>왕석두</td>
+        <td>1세대</td>
+        <td>(현)수원의 왕</td>
+      </tr>
+      <tr>
+        <td>박형석</td>
+        <td>2세대</td>
+        <td>(현)얼라이드 헤드</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Img media</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        border: 1px solid darkslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>이미지 태그</h2>
+    <img width="200" src="../asset/images/butterfly.jpg" alt="나비" />
+    <img height="200" src="../asset/images/butterfly.jpg" alt="나비" />
+    <img width="200" src="../asset/images/monkey.jpg" alt="원숭이" />
+    <img height="200" src="../asset/images/monkey.jpg" alt="원숭이" />
+    <!-- width이랑 height의 차이를 알아보고자 코드 생성 (자세한건 개발자 도구 computed에서 확인가능) -->
+    <!-- 상위 디렉토리에 있는 이미지를 찾을때에는 ../이미지주소 -->
+    <!-- 하위 디렉토리에 있는 이미지를 찾을때에는 하위폴더/이미지주소 -->
+    <!-- 동일한 디렉토리에 있는 이미지를 찾을때에는 /이미지주소 또는 ./이미지주소 -->
+
+    <h2>오디오 태그</h2>
+    <audio src="../asset/audio.mp3" controls></audio>
+    <!-- 오디오 태그에서 중요한 것은 src 뒤에 controls을 넣어야 구현이 된다. controls이 없으면 아예 비디오 태그는 없다. -->
+    
+    <h2>비디오 태그</h2>
+    <video width="400" src="../asset/video.mp4" poster="../asset/images/monkey.jpg" controls type=“video/mp4”></video>></video>
+    <!-- 비디오 태그는 한 술 더 떠서 controls 뒤에 type 형태로 입력해야한다. cotrols이 없으면 그냥 사진 태그로만 존재한다.그리고 poster는 동영상이 재생되기 전 사진을 나타나게 한다.-->
+    <h2>하이퍼 링크</h2>
+    <a href="http://www.naver.com" target="_blank">네이버</a>와 <a href="http://google.com">구글</a>은 포털 사이트이다
+    <!-- 이런 식으로 포털사이트로 가는 링크를 걸 수도 있다. 그리고 target="_blank"는 새창으로 포털사이트를 열어주는 코드이다. -->
+    <a href="#target">target으로 이동</a>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div id="target">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div>27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <!-- 이 코드는 a href의 특정위치로 이동할 수 있는 특성으로 구현한 코드이다. 그외에도 이메일 보내기 등 많은 역할을 하는 태그이다.-->
+  </body>
+</html>

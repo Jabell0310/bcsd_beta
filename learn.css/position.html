@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      main,
+      section,
+      article,
+      div {
+        border: 1px solid black;
+        padding: 20px;
+      }
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: yellow;
+      }
+      section {
+        background-color: violet;
+      }
+      article {
+        background-color: cyan;
+      }
+      div {
+        background-color: white;
+      }
+      div.relative {
+        position: relative;
+      }
+      div.absolute {
+        position: absolute;
+        background-color: grey;
+        top: 0px;
+        left: 0px;
+      }
+      div.fixed {
+        position: fixed;
+        background-color: blue;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 50%;
+      }
+      div.sticky {
+        position: sticky;
+        top: 100px; /*viewport에서 100px 떨어졌을때 fixed 속성이 나타나기 시작하는 코드 */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      main
+      <section>
+        section
+        <article>
+          article
+          <div>static</div>
+          <!-- static relative는 일반적인 흐름을 따라 배치가 되는데 이때 말하는 일반적인 흐름은 inline은 가로로 block은 세로로 배치된다는 뜻이다 -->
+          <div class="relative">relative</div>
+          <!-- static와의 차이는 top right bottom left와 같은 속성에 의한 상대적인 위치에 배치된다는 점이다. 그러니까 static은 이것이 비활성화 되어있어서 요소가 움직이지 않고 relative은 활성화 되어있어서 요소가 움직인다. -->
+          <div class="absolute">absolute</div>
+          <!-- absolute와 fixed는 일반적인 흐름 배치를 깨는데 이 코드에서도 div가 block이라 스타일규칙이 block단위로 적용되어야 하지만 이 일반적인 흐름을 깨므로 코드 단위가 바귄다-->
+          <div class="fixed">fixed</div>
+          <!-- fixed는 스크롤을 했을때도 특정위치에 요소가 고정되는 것을 구현하는 코드이다.-->
+          <div class="sticky">sticky</div>
+          <!--sticky는 다른 속성들과 다르게 right left bottom 속성이 적용되지 않는다. 임계점을 넘어가기전에는 일반적인 흐름을 따라가나 임계점을 넘어간순간 fixed속성이 나타나는 코드이다. -->
+          <div style="height: 1000px"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

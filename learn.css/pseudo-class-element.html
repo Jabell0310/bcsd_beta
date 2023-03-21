@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class&Element</title>
+    <style>
+      a {
+        font-size: 30px;
+      }
+      a:link {
+        color: cyan;
+      }
+      /* 방문하지 않은 사이트의 글자색 표시 */
+      a:visited {
+        color: red;
+      }
+      /* 방문한 사이트의 글자색 표시 */
+      a:hover {
+        color: blue;
+        font-weight: 900;
+      }
+      /* 마우스 포인터를 가까이 했을 때 글자색 표시 */
+      fieldset:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 20px gray;
+      }
+      a:active {
+        color: yellow;
+      }
+      /* 마우스로 해당링크를 클릭하고 있을 때 노란색으로 활성화 된다./ */
+      input:focus {
+        outline: none;
+        border: 3px solid red;
+        box-shadow: 0 0 20px rgb(216, 52, 52);
+      }
+      /* input태그에 마우스 포인터를 가까이 했을때 textbox의 기본적으로 설정한 파란색 윤곽이 들어나지 않게 설정한 코드이다. 윤곽의 색을 바꾸고 싶으면 이렇게 바꾸면 된다. */
+      .field {
+        margin-bottom: 10px;
+      }
+      /* 이름과 나이의 text박스를 보기 좋게 떨어뜨리기 위한 코드 */
+      li:nth-child(1) {
+        background-color: yellow;
+      }
+      /* li 형제 태그 중 1번째 태그로만 yellow 배경이 설정된다. 이때 even으로 하면 짝수 형제코드 odd로 하면 홀수 형제코드만 적용되는 것도 설정할 수 있다. */
+      li:not(.target) {
+        font-size: 30px;
+      }
+      /* class id랑 같이 쓰며 해당 class나 id를 가진 코드에는 스타일 규칙을 적용하지 않겠다는 의미이다. */
+
+      /* 가상 요소 */
+      .required::before {
+        content: "*";
+        margin-right: 2px;
+        color: red;
+        font-size: 10px;
+      }
+      /* before을 추가되어 textbox앞의 이름 나이 앞에 별표시가 추가되었다. */
+      /* after는 이름 나이 뒤에 별표시가 추가되는 코드이다. 특정 태그 콘텐츠 앞이나 뒤에 사용가능하다. */
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]:hover:after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 0px;
+        left: 56px;
+        background-color: black;
+        color: white;
+        width: 220px;
+      }
+      /* 코드를 설명하자면 position absolute로 조상 태그들 중에 static이 아닌 태그로 정렬되기 때문에 body태그로 정렬이 되었고 우리가 data-tooltip속성이 있는 태그를 relative로 바꿔주면서 이 absolute의 기준이 버튼이 된 것이다!  */
+      .letter::first-letter {
+        font-size: 60px;
+        color: blue;
+      }
+      /* 한글자만 스타일 규칙이 적용되는 코드이다. */
+      .line::first-line {
+        background-color: yellow;
+        color: blue;
+        font-size: 20px;
+      }
+      /* 한문장만 스타일 규칙이 적용되는 코드이다. */
+      p::selection {
+        background-color: red;
+        color: white;
+      }
+      /* 마우스를 클릭한채로 드래그하면 빨간색 배경과 흰 글이 나타나는데 selection은 이런 것을 구현하는 코드이다. */
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Pseudo Class</legend>
+      <div>
+        <a href="http://naver.com">네이버</a>
+        <a href="http://kakao.com">카카오</a>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>focus, before, after</legend>
+      <div class="field">
+        <label class="required" for="name">이름</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="field">
+        <label class="required" for="age">나이</label>
+        <input type="text" id="age" />
+      </div>
+      <button data-tooltip="이 버튼을 클릭하여 정보를 보내세요!">보내기</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>nth-child, not</legend>
+      <ul>
+        <li class="target">1content</li>
+        <li>2content</li>
+        <li>3content</li>
+        <li>4content</li>
+        <li>5content</li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>first-letter, first-line, section</legend>
+      <div>
+        <p class="letter">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime qui
+          neque quas delectus suscipit vero error magni illo! Reprehenderit,
+          consequuntur. Eius nulla sint suscipit corrupti et. Maiores labore
+          voluptate magni. Ipsa nihil atque distinctio corrupti porro eius
+          nostrum itaque culpa, qui explicabo eveniet cum sint accusamus, velit
+          ratione temporibus beatae! Vel aspernatur vero laudantium quos
+          inventore animi provident et quod?
+        </p>
+        <p class="line">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+          quia! Eaque ad, voluptate suscipit itaque quas non. Suscipit quos,
+          odit esse eum culpa dicta numquam qui soluta. Itaque, quas provident?
+          Accusamus placeat rem deserunt illum, reiciendis mollitia, provident
+          explicabo aliquid sapiente debitis delectus cumque quo similique
+          perferendis odio nulla porro. Beatae voluptatem nemo architecto.
+          Doloribus ea voluptatibus a quia inventore.
+        </p>
+      </div>
+    </fieldset>
+  </body>
+</html>

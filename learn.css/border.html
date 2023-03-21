@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <style>
+      .border {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black; /* 실제 개발에서 많이 쓰이는 탭*/
+        /* 
+        border-top: 20px dotted red;
+        border-bottom: 5px dashed blue;
+        border-left: 1px solid yellow;
+        border-right: 3px solid cyan;  border style을 적용해서 나타낸 코드들이다.
+        */
+      }
+      /* 개발자 도구에서 styles에서 border속성 확인가능 */
+      .border-radius {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      /* border-radius는 border를 둥글게 만들는 속성으로 원처럼 만들고 싶다면 값에 50%를 입력하면 된다.  */
+      .content-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid blue;
+        padding: 20px;
+        margin: 10px;
+        box-sizing: content-box;
+      }
+      /* contents-box는 100px을 유지하면서 padding 20px border 10px가 더해지는 명령어이다.. */
+      .border-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        padding: 20px;
+        margin: 10px;
+        box-sizing: border-box;
+      }
+      /* border-box는 contents box padding border 다 더해서 100px로 border 박스크기가 100px가 되는 명령어이다. html에 contents를 배치할 떄 계산하기 편해지므로 많이 사용된다.  */
+    </style>
+  </head>
+  <body>
+    <div class="border"></div>
+    <div class="border-radius"></div>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+  </body>
+</html>

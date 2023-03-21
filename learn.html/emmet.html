@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 자식노드 tag>tag>tag + tab: 자식 tag를 일일이 입력하지 않아도 된다. -->
+    <!-- ex) div>ul>li + tab -->
+    <div>
+      <ul>
+        <li></li>
+        <!-- 형제노드 tag+tag+tag + tab-->
+        <!-- ex) div>ul+ol+div + tab -->
+        <div>
+          <ul></ul>
+          <ol></ol>
+          <div></div>
+        </div>
+      </ul>
+    </div>
+    <!-- 반복하기 tag*숫자 + tab-->
+    <!-- ex)  div>ul>li*3 -->
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- 아이디 span#'아이디이름' + tab -->
+    <span id="item"></span>
+    <!-- 이때 #item tab을 쓰면 div tag가 출력 -->
+    <div id="item"></div>
+    <!-- 클래스 span.'클래스이름' + tab  -->
+    <span class="Title"></span>
+    <!-- 이때도 마찬가지로 .Title tab을 쓰면 div tag 출력 -->
+    <div class="Title"></div>
+    <!-- 콘텐츠 {말할 내용} -->
+    <p class="container">Hello world</p>
+    <!-- 자동 넘버링 $ -->
+    <p class="container">item1</p>
+  </body>
+</html>

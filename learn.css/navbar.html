@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none; /*a 태그에 밑줄이 사라짐 */
+        list-style: none; /* 글머리 기호 사라짐 */
+      }
+      nav {
+        background-color: #34495e;
+        width: 100%;
+        height: 80px;
+      }
+      nav li {
+        display: inline-block; /*네비게이션 바 가로정렬하는데 필수!!*/
+        margin: 0 8px;
+        line-height: 80px;
+      }
+      nav a {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase; /*모두 대문자로 변환*/
+        padding: 10px;
+      }
+      a.active,
+      a:hover {
+        border: 1px solid white;
+      } /*a hover는 마우스를 가까이했을때 스타일 규칙이 적용되는 코드이다. 그리고 이 코드에 a.active 값도 설정했기 때문에 home은 평상시에도 스타일 규칙이 적용되는 것을 알 수 있다.*/
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

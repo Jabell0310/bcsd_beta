@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Basic</title>
+    <style>
+      .shape {
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .animation1 {
+        animation-name: shape-color;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; /*이 애니메이션 코드를 무한히 반복한다는 의미를 지닌 코드이다.*/
+      }
+
+      @keyframes shape-color {
+        from {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+        }
+        to {
+          background-color: blue;
+        }
+      } /*애니메이션 구현 코드로 중간에 퍼신티지를 넣어서 여러 색깔의 애니메이션으로 바꾸는 것도 가능하다. */
+
+      .animation2 {
+        animation: circle 2s infinite;
+      }
+      @keyframes circle {
+        0% {
+          border-radius: 0%;
+        }
+        50% {
+          border-radius: 50%;
+        }
+        100% {
+          border-radius: 0%;
+        }
+      } /*이거는 사각형에서 원으로 원에서 사각형으로 가는 애니메이션을 구현한 것이다.*/
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="shape animation1"></div>
+      <div class="shape animation2"></div>
+    </main>
+  </body>
+</html>

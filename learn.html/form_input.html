@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- <fieldset>
+        <legend>개인정보</legend>
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>사업자정보</legend>
+        <input type="text" />
+        <input type="text" />
+      </fieldset> -->
+      <!-- fieldset의 역할은 데이터를 그룹화시키는 역할을 한다. 그리고 legend의 역할은 fieldset의 정보를 설명하는 역할이다.-->
+      <fieldset>
+        <legend>Input Tag</legend>
+        <ul>
+          <li>
+            <label for="text">Text</label>
+            <input type="text" id="text" required />
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" id="email" required />
+            <!-- 위 코드는 label, input을 이용하여 이메일 화면 구현(type에서 결정)/ 겉보기에는 text와 다를게 없으나 유효성체크를 한다는 점에서 text와 차이 -->
+            <!-- required 속성을 넢으면 서버에 데이터를 전송할 때 필수값 체크 -->
+          </li>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" required />
+            <!-- 전화번호 태그는 모바일로 접속시 키패드가 생성되는 코드이다./ -->
+          </li>
+          <li>
+            <label for="url">url</label>
+            <input
+              type="url"
+              id="url"
+              required
+              placeholder="url을 입력해주세요"
+            />
+            <!-- url도 마찬가지로 서버에 데이터를 전송할 때 url형식인지 아닌지 유효성검증을 한다. -->
+          </li>
+          <li>
+            <label for="number">number</label>
+            <input type="number" id="number" required min="5" max="10" />
+            <!-- 숫자를 증가시키거나 감소시키는 버튼이 활성화/ 최댓값 최솟값 입력 속성을 가짐-->
+          </li>
+          <li>
+            <label for="range">range</label>
+            <input type="range" id="range" required />
+            <!-- 범위버튼이 활성화/ 최댓값 최솟값 입력 속성을 가짐 -->
+          </li>
+          <li>
+            <label for="password">password</label>
+            <input type="password" id="password" required />
+            <!-- 비밀번호 바 생성 -->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>날짜관련</legend>
+        <ul>
+          <li>
+            <label for="date">date</label>
+            <input type="date" id="date" min="2023-03-17" max="2024-03-17" />
+            <!-- 날짜관련 코드로 이것도 최댓값 최솟값을 갖는다. 신청기한이 있을때 그 기간내에서 원하는 때에 지원할 날짜를 쓴다. -->
+          </li>
+          <li>
+            <label for="month">month</label>
+            <input type="month" id="month" required />
+            <!-- 현재 날짜가 이번 해 몇번째 달인지 나타내는 코드 -->
+          </li>
+          <li>
+            <label for="week">week</label>
+            <input type="week" id="week" required />
+            <!-- 현재 날짜가 이번 해 몇번째 주인지 나타내는 코드 -->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <ul>
+            <li>
+              <label for="time">time</label>
+              <input type="time" id="time" />
+              <!-- 시간을 나타내는 코듶 마찬가지로 min과 max속성을 가짐 -->
+            </li>
+          </ul>
+        </legend>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <ul>
+            <li>
+              <label for="file">file</label>
+              <input type="file" id="file" multiple />
+              <!-- 파일 속성은 파일 선택해서 제출하라는 바가 생성되고 이때 multiple은 여러 파일을 동시에 제출할 수 있는 코드이다. -->
+            </li>
+            <li>
+              <input type="hidden" name="" value="" />
+              <!-- hidden은 서버로 어떠한 데이터를 넘길때 사용하는 것으로 ui상으로 표시x -->
+            </li>
+          </ul>
+        </legend>
+      </fieldset>
+      <input type="submit" value="제출하기" />
+    </form>
+  </body>
+</html>

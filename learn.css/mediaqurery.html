@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      @media (min-width: 400px) {
+        body {
+          background-color: blue;
+        }
+      }
+      @media (min-width: 401px) and (max-width: 600px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media (min-width: 601px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      /* 웹 width값이 400px이 되었을때 배경색이 파란색이 되는 것을 알 수 있다. max-width은 600px이하인 웹브라우저는 body값을 적용한다는 의미이고 min-width는 400px이상인 웹브라우저는 body값을 적용한다는 의미를 지닌 태그이다.*/
+      /* 뷰포트의 크기에 따라 다른 CSS를 적용하는 것이 미디어쿼리의 특성이다. */
+    </style>
+  </head>
+  <body>
+    <h1>안녕하시요</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi ipsa
+      consequuntur pariatur, qui optio aliquid nisi laboriosam. Eius laborum
+      modi iste mollitia, ullam repellat sapiente maiores sunt possimus dolorum?
+      Accusamus repudiandae nisi sunt quibusdam veniam! Magni est quaerat neque
+      excepturi numquam repellat facere voluptates minus libero fugit. Repellat
+      vel distinctio aliquid est! Ad voluptatum eveniet illum saepe! Accusamus,
+      fugiat. Libero, quae distinctio aperiam vitae minus perspiciatis commodi
+      porro? Cupiditate rerum quas ratione? Repellendus modi dignissimos quam
+      repudiandae a, cum laboriosam ducimus pariatur nihil accusamus soluta,
+      molestiae quisquam tenetur sapiente. Itaque, similique! Vero, laboriosam
+      voluptatum quia animi id iste possimus ut, pariatur rerum libero vitae
+      impedit omnis facere! Velit eos dolores molestiae modi nisi officiis
+      maiores deserunt dolor voluptate repellat? Omnis quasi a mollitia
+      temporibus velit voluptates quas ratione illo adipisci architecto hic ea
+      alias, repellat, eum commodi nulla id, veritatis exercitationem et ab!
+      Corporis quia delectus animi accusantium repellendus.
+    </p>
+  </body>
+</html>

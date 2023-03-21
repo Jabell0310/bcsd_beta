@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline block 2</title>
+    <style>
+      div {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+      }
+      span {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+      }
+      /* width랑 height margin-top/bottom은 inline레벨 요소에서 써도 적용이 안됨 */
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <span>1</span><span>2</span><span>3</span>
+    <!-- block의 세로배열 특성, inline의 가로배열 특성을 이해하고자 코드생성 -->
+    <!-- block은 가로영역을 모두 background-color로 영역이 차지하는 것이 보이기 때문에 세로로 나열, inline은 컨텐츠만 background-color로 영역이 컨텐츠 부분만 차지하기 때문에 가로로 나열 -->
+  </body>
+</html>

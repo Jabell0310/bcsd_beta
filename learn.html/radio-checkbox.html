@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio&Checkbox</title>
+  </head>
+  <body>
+    <form action=""></form>
+    <fieldset>
+      <legend>좋아하는 색상을 모두 선택해주세요.</legend>
+      <ul>
+        <li>
+          <label for="red">빨강</label>
+          <input type="checkbox" id="red" value="red" />
+        </li>
+        <li>
+          <label for="orange">주황</label>
+          <input type="checkbox" id="orange" value="orange" />
+        </li>
+        <li>
+          <label for="yellow">노랑</label>
+          <input type="checkbox" id="yellow" value="yellow" />
+        </li>
+        <li>
+          <label for="green">초록</label>
+          <input type="checkbox" id="green" value="green" />
+        </li>
+        <li>
+          <label for="blue">파랑</label>
+          <input type="checkbox" id="blue" value="blue" />
+        </li>
+        <!-- input[type=checkbox][id="red"][value=red]로 바로 생성가능 -->
+        <!-- checkbox는 여러선택지 체크가능하다는 것을 이해하기 위해 만든 코드 -->
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>배송방법은?</legend>
+      <ul>
+        <li>
+          <label for="free">무료</label>
+          <input type="radio" name="delivery" id="free" value="free" />
+        </li>
+        <li>
+          <label for="pay">유료</label>
+          <input type="radio" name="delivery" id="pay" value="pay" />
+          <!-- radio속성은 name이 동일하지 않은 상태에서는 중복 선택이 가능하나 name이 동일한 상태에서는 여러개 중에 하나만 선택가능 -->
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>자기소개서</legend>
+      <textarea name="" id="" cols="30" rows="10">김민준</textarea>
+      <!-- 데이터를 입력할 수 있는 박스가 생성 cols랑 rows로 열(가로)과 행(세로) 즉 박스 크기를 바꿀 수 있다. 글을 쓸 때 다른 속성들은 value태그 안에다 지정을 하지만 textarea는 컨텐츠 안에다 지정-->
+    </fieldset>
+    <fieldset>
+      <legend>주문상품을 선택해주세요</legend>
+      <ul>
+        <li>
+          <select name="goods" id="goods">
+            <section value="apple_10kg">사과10kg</section>
+            <section value="apple_20kg">사과20kg</section>
+            <section value="apple_30kg">사과30kg</section>
+            <section value="apple_40kg">사과40kg</section>
+            <section value="apple_50kg">사과50kg</section>
+            <!-- 말그대로 고르라는 얘기로 selected는 처음 창에 뜰데 어떤 선택지부터 먼저 뜰지 결정하는 코드이고 mutiple도 쓸 수 있는데 이거는 홈페이지에서 shift + 클릭하면 중복선택 가능하다. -->
+          </select>
+        </li>
+        <li>
+          <label for="icecream-choice">맛을 선택하세요</label>
+          <input
+            list="icecream-flavors"
+            id="icecream-choice"
+            name="icecream-choice"
+          />
+          <datalist>
+            <option value="Chocolate"></option>
+            <option value="Coconut"></option>
+            <option value="Mint"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+            <!-- 기본기능은 select태그와 동일하지만 차이점은 datalist는 주어진 정보로 검색까지 가능하다. -->
+          </datalist>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit">제출하기</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+    <!-- submit은 지정한 uri로 양식데이터를 제출하는 코드 -->
+    <!-- reset은 초기화할때 쓰는 코드 -->
+    <!-- 버튼은 자바스크립트와 연동해서 많이 쓰는 코드 -->
+  </body>
+</html>

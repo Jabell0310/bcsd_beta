@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Combination</title>
+    <style>
+      /* 자손 결합자 */
+      section li {
+        color: blue;
+      }
+      section span {
+        color: red;
+      }
+      /* section에서 바로 하위코드를 포함한 모든 하위코드에 스타일 규칙을 부여하는 역할을 한다. */
+      /* 자식 결합자 */
+      section > ul > li {
+        text-align: center;
+      }
+      /* 바로 하위코드에 있는 태그만 스타일 규칙을 부여받는 결합자이다. */
+      /* 자손 결합자와 자식 결합자의 차이를 알아보고자 코드를 생성 */
+
+      /* 일반 형제 결합자 */
+      p ~ span {
+        color: red;
+      }
+      /* 첫번째 나오는 요소인 p태그 다음에 나오는 span태그를 모두 선택하여 스타일 규칙 적용 */
+      /* 인접 형제 결합자 */
+      p + code {
+        font-size: 30px;
+      }
+      .first + li {
+        color: blue;
+      }
+      /* p태그와 바로 인접된 code 태그를 선택하여 스타일 규칙 적용 */
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>헬스</h1>
+      <hr />
+      <p>위키백과, 우리 모두의 백과사전.</p>
+      <p>헬스(health)는 기본적으로 건강을 가리키며 그 외에 다음을 가리킨다.</p>
+      <ul>
+        <li>의료</li>
+        <li>보건</li>
+        <li>체력 (게이밍)</li>
+        <li>페션 헬스(Fashion health)</li>
+        <li>헬스 클럽(Health club)</li>
+        <li>구글 헬스: <span>구글</span>이 제공하는 개인 의료 정보 서비스</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <span>이건 빨강이 아닙니다.</span>
+      <p>여기 문단이 있습니다.</p>
+      <code>여긴 코드가 있는 곳이에요.</code>
+      <span>이제 빨강입니다.</span>
+      <code>코드가 있어요.</code>
+      <span>이것도 빨강입니다.</span>
+      <!-- section내부에 있는 코드는 모두 형제 노드이다. -->
+    </section>
+    <hr />
+    <ul>
+      <li class="first">1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </body>
+</html>

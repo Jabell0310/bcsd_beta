@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style 1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+      /* 구글 폰트를 다운로드 받아서 밑에 나눔고딕 형태를 구현한 코드이다. */
+      html {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+      /* 이거는 어느 글꼴을 적용할 것인지 결정하기 위한 코드이다. */
+      .title {
+        font-size: 20px;
+      }
+      .contents {
+        font-style: static;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      /* 이러면 글자가 살짝 기울어져 있는 것을 알 수 있다. */
+      .font-weight-bold {
+        font-weight: bold;
+      }
+      .font-weight-300 {
+        font-weight: 300;
+      }
+      .font-variant {
+        font-variant: small-caps;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
+      }
+      .retangle.width {
+        width: 20vw;
+        height: 200px;
+        background-color: yellow;
+      }
+      .retangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: blue;
+      }
+      /* 글꼴 관련 속성의 특징과 차이를 알아보고자 짜놓은 코드이다. */
+    </style>
+  </head>
+  <body>
+    <h2 class="title">css 스타일 테스트</h2>
+    <p class="content">글자가 어떻게 바뀔지 궁금하네요.</p>
+    <p class="content font-italic">글자가 어떻게 바뀔지 궁금하네요.</p>
+    <p class="content font-weight-bold">글자가 어떻게 바뀔지 궁금하네요.</p>
+    <p class="content font-weight-300">글자가 어떻게 바뀔지 궁금하네요.</p>
+    <p class="content font-variant">HELLO jabell</p>
+    <!-- 개발자도구 -> html클릭-> element.style에 font-family입력->  -->
+    <hr />
+    <h2 class="subtitle">px</h2>
+    <p>글자가 어떻게 바뀔지 궁금하네요.</p>
+    <h2 class="subtitle-rem">rem</h2>
+    <p>글자가 어떻게 바뀔지 궁금하네요.</p>
+    <!-- 최상위 요소에 있는 기준 글자의 배수를 적용하여 나타내는 역할을 한다. 예를 들어 2rem으로 설정했다면 html 폰트가 16px이면 rem을 적용한 태그는 32px로 나타낸다.-->
+    <h2 class="subtitle-em">em</h2>
+    <p>글자가 어떻게 바뀔지 궁금하네요.</p>
+    <!-- 현재 자기 자신의 폰트 사이즈에 배수를 2적용하여 나타내는 역할을 한다.-->
+    <hr />
+    <!-- viewport width -->
+    <h2 class="retangle width">vw</h2>
+    <div></div>
+    <!-- viewport height -->
+    <h2 class="retangle height">vh</h2>
+    <div></div>
+  </body>
+</html>

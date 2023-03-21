@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Container</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .flex-container {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+        /*flex-direction: row;
+        flex-wrap: wrap;*/
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      /* flex방향이 row이면 좌에서 우로 row-reverse는 우에서 좌로 column이면 위에서 아래로 column-reverse는 아래에서 위로 배열된다. */
+      /* wrap은 flexbox가 width의 px값을 넘어갔을 때 개행을 해주는 태그이다. */
+      /* justify-content에서 flex-start은 flexbox를 좌측으로 flex-end는 우측으로 center는 중앙으로 정렬되고 space-around는 균등분할 space-between은 첫번째와 마지막 flexbox는 맨 끝에 그리고 나서 나머지는 균등분할 */
+      /* align-content에서 flex-start은 flexbox를 위로 flex-end는 아래로 center는 중앙으로 정렬되고 space-between은 첫번째와 마지막 flexbox는 맨 끝에 그리고 나서 나머지는 균등분할 space-around는 그냥 균등분할된다. */
+      .flex-item {
+        color: white;
+        width: 80px;
+        height: 80px;
+        background-color: rgb(189, 69, 189);
+        text-align: center;
+        border: 1px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+      .col1 {
+        width: 80px;
+      }
+      .col2 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table 기본</h1>
+    <table>
+      <caption>
+        프로필 테이블
+      </caption>
+      <tr>
+        <th>이름</th>
+        <th>취미</th>
+        <th>특기</th>
+      </tr>
+      <tr>
+        <td>홍길동</td>
+        <td>도술</td>
+        <td>축지법</td>
+      </tr>
+      <tr>
+        <td>김민준</td>
+        <td>코딩</td>
+        <td>야망</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>Table 그룹 태그</h1>
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+      <colgroup>
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+        <col class="col4" />
+        <col class="col5" />
+        <col class="col6" />
+      </colgroup>
+      <!-- 이 테이블에서 1반은 공통적인 상황이므로 colgroup을 통해서 묶어주는 역할을 한다. 이때 col1처리를 해주면 테이블 합성이 가능하다. -->
+      <thead>
+        <tr>
+          <th>반</th>
+          <th>이름</th>
+          <th>국어</th>
+          <th>영어</th>
+          <th>수학</th>
+          <th>코딩</th>
+        </tr>
+        <!-- 이때 th td태그는 tr태그 안쪽에 있어야한다. -->
+      </thead>
+      <tbody>
+        <tr>
+          <th>1반</th>
+          <th>홍길동</th>
+          <th>90</th>
+          <th>80</th>
+          <th>95</th>
+          <th>100</th>
+        </tr>
+        <tr>
+          <th>1반</th>
+          <th>전우치</th>
+          <th>75</th>
+          <th>65</th>
+          <th>80</th>
+          <th>85</th>
+        </tr>
+        <tr>
+          <th>1반</th>
+          <th>임꺽정</th>
+          <th>85</th>
+          <th>100</th>
+          <th>75</th>
+          <th>90</th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>1반</th>
+          <th>평균</th>
+          <th>81.6</th>
+          <th>81.6</th>
+          <th>83.3</th>
+          <th>91.6</th>
+        </tr>
+      </tfoot>
+      <!-- 보통 테이블도 head body foot 3가지 구조로 나뉘고 body의 정보가 많을수록 회원정보가 많다는 얘기이다. -->
+    </table>
+  </body>
+</html>
