@@ -1,0 +1,40 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: darkgreen;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 10px;
+}
+#middle {
+  background-color: gray;
+}
+#static #middle {
+  position: static;
+  top: 50px;
+}
+#relative #middle {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+#absolute #middle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#fixed #middle {
+  position: fixed;
+  top: 0;
+  left: 400;
+}
+#sticky #middle {
+  position: sticky;
+  top: 20px;
+  left: 600;
+}
+/* static은 일반적인 문서 흐름을 따르며 top과 left를 설정해도 고정되어있기 때문에 적용이 되지 않는다. */
+/* relative는 일반적인 문서 흐름을 따르며 top left를 적용된다. */
+/* absolute는 문서가 아니기에 일반적인 문서 흐름을 깨며 top left가 적용이 되고 기준은 뷰포트 좌상단이다. */
+/* fixed는 일반적인 문서 흐름을 깨며 스크롤바가 있을때 밑으로 내려도 뷰포트에서 위치가 변하지 않는다. */
+/* sticky는 일반적인 문서 흐름을 따르며 초반에는 살짝 움직였다가 임계치를 넘기면 fixed의 성질이 나타나는 속성이다. */

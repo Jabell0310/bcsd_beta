@@ -1,0 +1,91 @@
+#Bundang {
+  color: rgb(205, 191, 66);
+  background-color: greenyellow;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+#Bundang:hover {
+  letter-spacing: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#Bundang:active {
+  color: red;
+  background-color: black;
+}
+h2 {
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
+h2:hover {
+  font-size: 30px;
+  font-weight: 300;
+}
+h2:active {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 15px;
+}
+#Spain {
+  color: aquamarine;
+  background-color: black;
+}
+#India {
+  color: gold;
+  background-color: blueviolet;
+}
+#USA {
+  color: brown;
+  background-color: beige;
+}
+#Japan {
+  color: red;
+  background-color: white;
+}
+#Korea {
+  color: rgb(160, 31, 31);
+  background-color: chartreuse;
+}
+h3:hover {
+  background-color: aquamarine;
+  text-decoration: black underline solid;
+  color: darkred;
+}
+h3:active {
+  font-size: 20px;
+}
+.food {
+  text-align: center;
+  color: whitesmoke;
+}
+.food:nth-of-type(odd) {
+  background-color: chartreuse;
+}
+.food:nth-of-type(even) {
+  background-color: crimson;
+}
+img {
+  width: 500px;
+  height: 300px;
+  margin-left: 450px;
+}
+img:hover {
+  width: 600px;
+  height: 400px;
+}
+a {
+  text-decoration: none;
+  margin-left: 660px;
+  color: black;
+}
+a:hover {
+  text-decoration: green underline solid;
+  color: gray;
+}
+/* 가상요소 중 hover은 커서를 가까이 active는 클릭을 유지한 채로 selecting은 요소를 고른채로 css스타일링이 적용된다. */
+/* 가상클래스 중 nth-child는 자식태그에 nth-type은 특정 형제노드에 스타일링이 적용된다. */
+/* id는 html에서 하나의 태그만 class는 여러개의 태그에 지정한다. */

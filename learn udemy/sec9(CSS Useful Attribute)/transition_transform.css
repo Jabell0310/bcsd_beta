@@ -1,0 +1,94 @@
+#block {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: aquamarine;
+  display: inline-block;
+}
+#block:hover {
+  border-radius: 50%;
+  background-color: tomato;
+  transition: border-radius 1s, background-color 2s;
+}
+.circle {
+  width: 0.9em;
+  height: 0.9em;
+  background-color: black;
+  border: 2px dotted green;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.circle:active {
+  margin-left: 500px;
+}
+.circle:nth-child(1) {
+  transition: margin-left 0.2s;
+}
+.circle:nth-child(2) {
+  transition: margin-left 0.2s 0.2s;
+}
+.circle:nth-child(3) {
+  transition: margin-left 0.2s 0.4s;
+}
+.circle:nth-child(4) {
+  transition: margin-left 0.4s 0.2s;
+}
+/* transition은 hover나 active처리를 했을 때 변화가 일어날 시간을 규정하는 것으로 앞부분이 전환시간 뒷부분이 전환될 때까지 대기할 시간을 의미*/
+h2 {
+  color: white;
+  padding: 1rem 0.5rem;
+  margin: 10;
+  width: 7em;
+  height: 2em;
+}
+h2:nth-of-type(1) {
+  background-color: red;
+  border: 2px solid rebeccapurple;
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+/* rotate는 박스타입을 회전 transform-origin은 회전축의 위치를 설정하는 속성이다. */
+h2:nth-of-type(2) {
+  background-color: blue;
+  border: 2px solid blueviolet;
+  transform: scaleX(0.5);
+}
+h2:nth-of-type(3) {
+  background-color: yellow;
+  border: 2px solid gold;
+  transform: scaleY(0.5);
+}
+/* scale은 박스 크기를 줄일 수 있는 명령어이다.*/
+h2:nth-of-type(4) {
+  background-color: greenyellow;
+  border: 2px solid green;
+  transform: translateX(200px);
+}
+h2:nth-of-type(5) {
+  background-color: grey;
+  border: 2px solid silver;
+  transform: translateY(-50px);
+}
+h2:nth-of-type(6) {
+  background-color: brown;
+  border: 2px solid beige;
+  transform: translate(200px, 200px);
+}
+/* translate은 박스 위치를 옮기는 속성으로 2개를 쓸때는 앞쪽이 상하 뒷쪽이 좌우이다. */
+h2:nth-of-type(7) {
+  background-color: purple;
+  border: 2px solid darkcyan;
+  transform: skewX(30deg);
+}
+h2:nth-of-type(8) {
+  background-color: black;
+  border: 2px solid darkcyan;
+  transform: skewY(30deg);
+}
+/* skew는 기울어지는 속성으로 앞쪽이 x 뒷쪽이 y이다. */
+h2:nth-of-type(9) {
+  background-color: pink;
+  border: 2px solid hotpink;
+  transform: rotate(45deg) skew(30deg, 30deg);
+}
+/* 이런식으로 여러가지 속성을 쓸 수 있다. */

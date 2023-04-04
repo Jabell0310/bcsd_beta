@@ -1,0 +1,96 @@
+h1 {
+  text-align: center;
+}
+div {
+  width: 700px;
+  height: 650px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+@media (max-width: 399px) {
+  h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+  }
+  div {
+    background-image: url(../../img_collector/Pangyo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 599px) {
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+  }
+  div {
+    background-image: url(../../img_collector/Bundang.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  div {
+    background-image: url(../../img_collector/Seungnam.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  div {
+    background-image: url(../../img_collector/Gyuengido.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  div {
+    background-image: url(../../img_collector/Korea.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  div {
+    background-image: url(../../img_collector/Asia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+  }
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  div {
+    background-image: url(../../img_collector/World.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,32 @@
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  background-color: blue;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+  color: aqua;
+  text-align: center;
+  background-color: mediumorchid;
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  color: green;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 50;
+  background-color: yellow;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h3 {
+  text-decoration: yellow underline dotted;
+  text-align: center;
+  background-color: blueviolet;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* color: 글자색 변경 background-color: 배경색 변경 */
+/* font-size:글자 크기조절 font-weight:글자 두께조절 font-family: 글씨체 letter-space: 글자 간격 조절 */

@@ -1,0 +1,45 @@
+body{
+  margin:0;
+}
+header {
+  height: 50px;
+  width: 100vw;
+  background-color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main > div {
+  display: inline-block;
+  height: calc(100vh - 100px);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#div1 {
+  background-color: lightgreen;
+  width: 100px;
+  margin-right: 10px;
+  height: calc(100vh - 100px);
+}
+
+#div2 {
+  background-color: pink;
+  width: calc(100vw - 235px);
+  height: calc(100vh - 100px);
+}
+
+#div3 {
+  background-color: yellow;
+  width: 100px;
+  margin-left: 10px;
+  height: 100%;
+  height: calc(100vh - 100px);
+}
+
+footer {
+  height: 30px;
+  width: 100vw;
+  background-color: brown;
+  text-align: center;
+}
