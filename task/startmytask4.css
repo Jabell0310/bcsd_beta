@@ -1,0 +1,145 @@
+h1 {
+  font-size: 200px;
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 650px;
+}
+#text1 {
+  color: blue;
+}
+#text2 {
+  color: red;
+}
+#text3 {
+  color: yellow;
+}
+#text4 {
+  color: blue;
+}
+#text5 {
+  color: green;
+}
+#text6 {
+  color: red;
+}
+form {
+  display: flex;
+  margin-top: 200px;
+}
+button {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  left: 850px;
+}
+#search {
+  border-radius: 100px 0px 0px 100px;
+  border-right: none;
+  background-color: white;
+}
+input {
+  border-left: none;
+  border-right: none;
+  font-size: 30px;
+  position: relative;
+  left: 850px;
+}
+#microphone {
+  border-radius: 0px 100px 100px 0px;
+  border-left: none;
+  background-color: white;
+}
+input {
+  height: 80px;
+  width: 1100px;
+}
+#background {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 280px;
+  left: -380px;
+}
+.icon-bigbox {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-bigbox:hover {
+  background-color: lightgray;
+  width: 300px;
+  height: 300px;
+}
+.icon-smallbox {
+  width: 100px;
+  height: 100px;
+}
+.icon-smallbox:hover {
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+}
+#img1 {
+  background: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160504_295%2Fzzlidde_1462360339348GT0M2_PNG%2F2016-05-04_20.11.40.png&type=sc960_832);
+  background-size: cover;
+}
+#img2 {
+  background: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2b%2Fcf%2F18%2F2bcf188dccd26ff6ee392f9e88b2ceae.jpg&type=sc960_832);
+  background-size: cover;
+}
+#img3 {
+  background: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MjZfMjA0%2FMDAxNjY0MTY3NTQwNTEy.LTzsWawINS7ZYYShCMivsxxkz4_kDZFJwJYh-drNnYAg.MekCGIluwwjR_SXI8lTO05rQQpVkwKPf0_KGUooF0ZEg.JPEG.othersenu%2Fwd.jpg&type=sc960_832);
+  background-size: cover;
+}
+#img4 {
+  background: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Funiversal-web-mobile-1-9%2F65%2F48-512.png&type=sc960_832);
+  background-size: cover;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  button {
+    left: 100px;
+  }
+  input {
+    left: 100px;
+  }
+  .icon-bigbox {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  button {
+    left: 200px;
+  }
+  input {
+    left: 200px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1500px) {
+  button {
+    left: 400px;
+  }
+  input {
+    left: 400px;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2000px) {
+  button {
+    left: 600px;
+  }
+  input {
+    left: 600px;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2500px) {
+  button {
+    left: 700px;
+  }
+  input {
+    left: 700px;
+  }
+}

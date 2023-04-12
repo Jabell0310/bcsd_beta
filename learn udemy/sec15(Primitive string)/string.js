@@ -40,7 +40,7 @@ let price = 2000;
   demand *
     price`Our customer's demand is ${demand}. So our company profit is ${
       demand * price
-    }``Hi back${6 + 3 + 2}`;
+    }``Hi back${6 + 3 + 2}`; //11
 Math.E;
 Math.PI;
 Math.floor(23.9);

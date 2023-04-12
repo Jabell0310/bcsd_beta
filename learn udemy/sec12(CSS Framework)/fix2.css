@@ -39,3 +39,18 @@ h1 {
     justify-content: space-evenly;
   }
 }
+.pwcheck {
+  color: white;
+  margin-left: 295px;
+  font-size: 30px;
+}
+.id-check-result {
+  color: white;
+  margin-left: 295px;
+  font-size: 30px;
+}
+.major {
+  color: white;
+  margin-left: 295px;
+  font-size: 30px;
+}
