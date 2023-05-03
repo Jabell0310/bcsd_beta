@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: red;
+}
+h1:hover {
+  color: greenyellow;
+}
+section {
+  display: block;
+}
+#background1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#background2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+div {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: white;
+}
+img {
+  width: 200px;
+  height: 300px;
+}
+#userrock:hover {
+  background-color: gray;
+}
+#userscissor:hover {
+  background-color: gray;
+}
+#userpaper:hover {
+  background-color: gray;
+}
+button {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+buttonbox {
+  display: flex;
+  justify-content: center;
+}

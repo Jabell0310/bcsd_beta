@@ -1,0 +1,70 @@
+html {
+  margin: 0;
+  font-size: 40px;
+  background-color: aquamarine;
+}
+div {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+a#Bundang {
+  color: black;
+}
+a#Bundang:hover {
+  color: yellow;
+  text-decoration: underline yellow solid;
+}
+a.subway {
+  color: yellow;
+  font-weight: 300;
+  font-family: fantasy;
+  font-size: 0.5em;
+}
+a.subway:hover {
+  text-decoration: rgb(158, 158, 21) underline solid;
+  color: rgb(158, 158, 21);
+}
+a[href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%A7%A4%EC%97%AD"]:hover
+{
+  color: blue;
+  text-decoration: blue underline solid;
+}
+a[href="https://ko.wikipedia.org/wiki/%EC%A0%95%EC%9E%90%EC%97%AD"]:hover
+{
+  color: red;
+  text-decoration: red underline solid;
+}
+div:nth-of-type(6) h2 a:hover {
+  color: red;
+  text-decoration: red underline solid;
+}
+img {
+  width: 90%;
+  height: 90%;
+  display: block;
+  border: 5px solid yellow;
+}
+img:hover {
+  width: 100%;
+  height: 100%;
+}
+.saygood {
+  display: block;
+  background-color: greenyellow;
+  color: white;
+  border-radius: 0.5em;
+  border-color: greenyellow;
+  padding: 1px;
+}
+.saygood:hover {
+  background-color: green;
+  color: yellow;
+  text-decoration: yellow underline solid;
+}
+.heart {
+  color: red;
+}
