@@ -1,0 +1,75 @@
+.background {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+h1 {
+  color: white;
+}
+
+section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+#select {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(10, 300px);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+#selectedbox {
+  display: grid;
+  grid-template-columns: repeat(2, 60px);
+  grid-template-rows: repeat(15, 60px);
+  grid-gap: 40px;
+}
+.background0 {
+  background-color: red;
+  grid-row-start: 1;
+  grid-row-end: 11;
+  height: 1580px;
+}
+.inbackground {
+  background-color: greenyellow;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inh1 {
+  font-size: 10px;
+}
+.inimg {
+  width: 20px;
+  height: 20px;
+}
+.inp {
+  font-size: 5px;
+}
+#title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 20px;
+  text-align: center;
+}
