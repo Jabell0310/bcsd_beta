@@ -113,5 +113,5 @@ const universityClass = [
 universityClass.map(({ title, contentRate }) => {
   return `${title} Class is rated ${contentRate}/5`;
 });
-// 매개변수 분해는 배개변수 자리 안에 배열과 매개변수 명을 넣어서 각각의 객체를 분해하는 것으로 이러면 매서드 형식으로 안 써도 된다.
+// 매개변수 분해는 매개변수 자리 안에 배열과 매개변수 명을 넣어서 각각의 객체를 분해하는 것으로 이러면 매서드 형식으로 안 써도 된다.
 // 즉 universityClass.title 매서드를 안 써도 매개변수 분해를 통해 축약이 가능하다.

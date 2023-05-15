@@ -8,7 +8,7 @@ input.addEventListener("keydown", function (e) {
   console.log(e.key);
   console.log(e.code);
 });*/
-// 키보드 이벤트는 keydown과 keyup 두가지가 있으며 keydown은 키보드를 누른 상태에서 keyup은 키보드를 뗸 상태에서 생성된다.
+// 키보드 이벤트는 keydown과 keyup 두가지가 있으며 keydown은 키보드를 누른 상태에서 keyup은 키보드를 뗀 상태에서 생성된다.
 // keyboard이벤트 사용할 때는 종종 이벤트 객체를 많이 사용한다.
 window.addEventListener("keydown", function (e) {
   switch (e.code) {

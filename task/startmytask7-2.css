@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#loginBox {
+  width: 362px;
+  height: 762px;
+}
+#svgBox {
+  width: 24px;
+  height: 24px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+#textBox {
+  width: 150px;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+#pageBox {
+  width: 200px;
+  height: 54px;
+  text-decoration: solid green;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+#box1 {
+  display: flex;
+  justify-content: space-between;
+}
+#detailBox {
+  width: 133px;
+  height: 22px;
+  color: red;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+#pageBox2 {
+  width: 30px;
+  height: 22px;
+  color: red;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+#box2 {
+  width: 294px;
+  height: 250px;
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  row-gap: 2px;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+#telBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#payBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#timeBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#etcBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#holidayBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#box3 {
+  width: 300px;
+  height: 26px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+span {
+  font-size: 13px;
+}
+#buttonBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+button {
+  color: white;
+  background-color: blue;
+  width: 105px;
+  height: 38px;
+}

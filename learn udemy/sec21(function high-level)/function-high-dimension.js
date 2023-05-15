@@ -26,7 +26,7 @@ function testYourFortune() {
   }
 }
 const fortuneTest = testYourFortune();
-fortuneTest();
+fortuneTest;
 
 function makeBetweenFunc(min, max) {
   return function (num) {

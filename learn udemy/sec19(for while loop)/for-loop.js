@@ -17,7 +17,7 @@ for (let pizza = 0; pizza < pizzaStore.length; pizza++) {
 for (let x = 1; x <= 10; x++) {
   console.log("x값: ", x);
   for (let y = 3; y > 0; y--) {
-    console.log("   y값: ", y);
+    console.log("y값: ", y);
   }
 }
 const generation = [
