@@ -56,3 +56,10 @@ footer {
   height: 300px;
   margin-top: 40px;
 }
+#checkEmailType {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

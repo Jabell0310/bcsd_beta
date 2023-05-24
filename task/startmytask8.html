@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer & Stopwatch</title>
+    <link rel="stylesheet" href="startmytask8.css" />
+  </head>
+  <body>
+    <section id="stopwatchbox">
+      <h1>스톱워치</h1>
+      <button id="btn_stopwatch">시작!</button>
+      <div id="stopwatch">00:00:00</div>
+    </section>
+    <section id="timerbox">
+      <h1>타이머</h1>
+      <button id="btn_timer">시작!</button>
+      <div id="timer">
+        <input
+          type="number"
+          id="hour"
+          max="23"
+          min="0"
+          maxlength="2"
+          oninput="numberMaxLength(this)"
+          value=""
+        />
+        :
+        <input
+          type="number"
+          id="minute"
+          max="59"
+          min="0"
+          maxlength="2"
+          oninput="numberMaxLength(this)"
+          value=""
+        />
+        :
+        <input
+          type="number"
+          id="second"
+          max="59"
+          min="0"
+          maxlength="2"
+          oninput="numberMaxLength(this)"
+          value=""
+        />
+      </div>
+    </section>
+    <script src="startmytask8.js"></script>
+  </body>
+</html>

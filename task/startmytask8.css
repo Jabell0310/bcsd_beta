@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+}
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section {
+  background-color: greenyellow;
+  border: 1px solid black;
+  height: 100vh;
+  width: 600px;
+}
+#stopwatch {
+  margin-top: 300px;
+  color: white;
+  font-size: 50px;
+}
+#timer {
+  margin-top: 300px;
+  color: white;
+  font-size: 50px;
+}
+#pause_stopwatch {
+  margin-top: 50px;
+}
+#pause_timer {
+  margin-top: 50px;
+}
+#wait_5sec {
+  margin-top: 50px;
+}
+#reset {
+  margin-top: 50px;
+}
+input {
+  background-color: greenyellow;
+  width: 120px;
+  height: 60px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  border: none;
+}
