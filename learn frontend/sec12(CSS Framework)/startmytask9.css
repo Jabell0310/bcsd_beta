@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#add_Box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#add_Do {
+  width: 600px;
+  height: 50px;
+}
+#add_Btn {
+  width: 50px;
+}
+#to_Do_List_Box {
+  border: 1px solid black;
+  background-color: aquamarine;
+  width: 650px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+ul {
+  width: 600px;
+  height: 600px;
+}
+.bigBox {
+  display: flex;
+  justify-content: space-between;
+}
+.finish {
+  color: greenyellow;
+}
+.delete {
+  color: red;
+}
+.changed {
+  color: red;
+}
